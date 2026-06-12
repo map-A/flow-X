@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/flowx-core",
+    "crates/flowx-cli",
+    "crates/flowx-desktop",
+    "crates/flowx-python",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/flowx/flowx"
+
+[workspace.dependencies]
+tokio = { version = "1.35", features = ["full"] }
+async-trait = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+anyhow = "1.0"

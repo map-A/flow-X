@@ -1,0 +1,27 @@
+# FlowX AI 模块配置
+
+[model]
+# 模型类型: openai, anthropic, zhipu (GLM), custom
+provider = "zhipu"
+model_name = "glm-4v"
+api_endpoint = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
+
+# API 配置
+api_key = "${FLOWX_API_KEY}"  # 从环境变量读取
+timeout = 60  # 秒
+max_retries = 3
+
+# 模型参数
+temperature = 0.7
+top_p = 0.9
+
+[ai]
+# AI Agent 配置
+max_steps = 20
+default_timeout = 60
+
+[vision]
+# 图像处理
+max_width = 1280
+max_height = 720
+compress_quality = 85
