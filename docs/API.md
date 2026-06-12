@@ -14,7 +14,6 @@ import flowx
 
 # 连接设备
 device = flowx.Device.connect("macos")  # macOS
-device = flowx.Device.connect("emulator-5554")  # Android ADB
 device = flowx.Device.connect("android://192.168.1.100")  # Android Accessibility
 
 # 基础操作

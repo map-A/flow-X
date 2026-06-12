@@ -137,12 +137,6 @@ with device.find(text="搜索框") as search:
     search.parent().find(text="搜索").click()
 ```
 
-**核心能力**：
-- Android设备连接（ADB）
-- 基础操作：点击、滑动、输入
-- 元素定位：文本、ID、xpath、图像
-- 截图和OCR
-- **Pythonic设计**：链式调用、上下文管理器、异常处理
 
 **为什么Python是主推？**
 1. AI时代的主流语言（数据分析、机器学习）

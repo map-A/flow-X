@@ -5,3 +5,5 @@ Cargo.lock
 *.log
 android-app/.gradle/*
 android-app/build/*
+**/node_modules/*
+**/dist/*

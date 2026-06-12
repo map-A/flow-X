@@ -1,0 +1,45 @@
+[package]
+name = "flowx-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version = "1.83"
+
+[[bin]]
+name = "flowx-desktop"
+path = "src/main.rs"
+
+[dependencies]
+# Tauri framework - 使用兼容 Rust 1.83 的版本
+tauri = { version = "2.0", features = ["devtools", "wry"], default-features = false }
+tauri-plugin-shell = "2.0"
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# FlowX core
+flowx-core = { path = "../../flowx-core" }
+
+# Async runtime
+tokio = { workspace = true }
+
+# Error handling
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+
+# File system operations
+notify = "6.1"
+
+# Path handling
+dirs = "5.0"
+
+# Date/time - 使用 chrono 替代 time
+chrono = "0.4"
+
+# Image processing
+image = "0.24"
+base64 = "0.21"
+toml = "0.8"
+
+[build-dependencies]
+tauri-build = { version = "2.0", features = [] }

@@ -2,6 +2,7 @@ use crate::executor::MockExecutor;
 use flowx_core::device::Device;
 use pyo3::exceptions::PyRuntimeError;
 use pyo3::prelude::*;
+use pyo3::types::PyBytes;
 
 #[pyclass(name = "Device")]
 pub struct PyDevice {
@@ -69,7 +70,7 @@ impl PyDevice {
         })
     }
 
-    fn screenshot(&self) -> PyResult<PyScreenshot> {
+    fn screenshot(&self, py: Python) -> PyResult<PyScreenshot> {
         self.runtime.block_on(async {
             let image = self
                 .device
@@ -79,7 +80,7 @@ impl PyDevice {
             Ok(PyScreenshot {
                 width: image.width,
                 height: image.height,
-                data: image.data,
+                data: PyBytes::new_bound(py, &image.data).into(),
             })
         })
     }
@@ -101,5 +102,5 @@ pub struct PyScreenshot {
     #[pyo3(get)]
     pub height: u32,
     #[pyo3(get)]
-    pub data: Vec<u8>,
+    pub data: Py<PyBytes>,
 }

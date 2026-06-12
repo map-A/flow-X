@@ -16,15 +16,9 @@ default-members = [
 
 [workspace.package]
 version = "0.1.0"
-edition = "2024"
-rust-version = "1.95"
+edition = "2021"
 license = "MIT"
 repository = "https://github.com/flowx/flowx"
-authors = ["FlowX Contributors"]
-categories = ["date-and-time"]
-keywords = ["date", "time", "calendar", "duration"]
-description = "Date and time library"
-homepage = "https://github.com/flowx/flowx"
 
 [workspace.dependencies]
 tokio = { version = "1.35", features = ["full"] }
