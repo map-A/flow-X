@@ -39,10 +39,10 @@
 
 | 平台 | 下载文件 | 说明 |
 |------|---------|------|
-| macOS (Apple Silicon) | `FlowX-Desktop-aarch64.dmg` | M1/M2/M3/M4 芯片 |
-| macOS (Intel) | `FlowX-Desktop-x86_64.dmg` | Intel 芯片 |
-| Windows | `FlowX-Desktop-x64.msi` | Windows 10/11 |
-| Android | `FlowX.apk` | Android 8.0+ |
+| macOS (Apple Silicon) | `FlowX.Desktop_0.1.0_aarch64.dmg` | M1/M2/M3/M4 芯片 |
+| Windows | `FlowX.Desktop_0.1.0_x64_en-US.msi` | Windows 10/11 |
+| Windows (安装器) | `FlowX.Desktop_0.1.0_x64-setup.exe` | Windows 10/11 |
+| Android | `FlowX-debug.apk` | Android 8.0+ |
 
 ---
 
