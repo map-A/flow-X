@@ -35,6 +35,6 @@ thiserror = "1.0"
 anyhow = "1.0"
 
 [patch.crates-io]
-time = { path = "time/time" }
-time-core = { path = "time/time-core" }
-time-macros = { path = "time/time-macros" }
+time = { git = "https://github.com/map-A/time.git", branch = "main" }
+time-core = { git = "https://github.com/map-A/time.git", branch = "main" }
+time-macros = { git = "https://github.com/map-A/time.git", branch = "main" }
