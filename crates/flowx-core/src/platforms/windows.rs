@@ -1,9 +1,6 @@
 use crate::engine::{AsyncCommandExecutor, Command, CommandError, CommandResult};
 use async_trait::async_trait;
 
-#[cfg(target_os = "windows")]
-use windows::{Win32::Foundation::*, Win32::UI::Accessibility::*};
-
 /// Windows UI Automation 客户端
 pub struct WindowsClient;
 
