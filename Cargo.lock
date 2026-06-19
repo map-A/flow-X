@@ -4438,26 +4438,26 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.3.48"
-source = "git+https://github.com/map-A/time.git?branch=main#f8b6837d41ed187cf1277615018e409933da1ce2"
+version = "0.3.49"
+source = "git+https://github.com/time-rs/time.git?tag=v0.3.49#ff8683cb10a53af78e74f4299300817e4796535c"
 dependencies = [
  "deranged",
  "num-conv",
  "powerfmt",
- "serde",
+ "serde_core",
  "time-core",
  "time-macros",
 ]
 
 [[package]]
 name = "time-core"
-version = "0.1.2"
-source = "git+https://github.com/map-A/time.git?branch=main#f8b6837d41ed187cf1277615018e409933da1ce2"
+version = "0.1.9"
+source = "git+https://github.com/time-rs/time.git?tag=v0.3.49#ff8683cb10a53af78e74f4299300817e4796535c"
 
 [[package]]
 name = "time-macros"
-version = "0.2.18"
-source = "git+https://github.com/map-A/time.git?branch=main#f8b6837d41ed187cf1277615018e409933da1ce2"
+version = "0.2.29"
+source = "git+https://github.com/time-rs/time.git?tag=v0.3.49#ff8683cb10a53af78e74f4299300817e4796535c"
 dependencies = [
  "num-conv",
  "time-core",

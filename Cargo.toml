@@ -35,6 +35,6 @@ thiserror = "1.0"
 anyhow = "1.0"
 
 [patch.crates-io]
-time = { git = "https://github.com/map-A/time.git", branch = "main" }
-time-core = { git = "https://github.com/map-A/time.git", branch = "main" }
-time-macros = { git = "https://github.com/map-A/time.git", branch = "main" }
+time = { git = "https://github.com/time-rs/time.git", tag = "v0.3.49" }
+time-core = { git = "https://github.com/time-rs/time.git", tag = "v0.3.49" }
+time-macros = { git = "https://github.com/time-rs/time.git", tag = "v0.3.49" }
