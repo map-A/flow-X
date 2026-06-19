@@ -3,7 +3,33 @@ Cargo.lock
 **/*.rs.bk
 *.pdb
 *.log
-android-app/.gradle/*
-android-app/build/*
-**/node_modules/*
-**/dist/*
+*.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Android
+android-app/.gradle/
+android-app/build/
+android-app/.venv/
+android-app/local.properties
+
+# Node
+**/node_modules/
+**/dist/
+crates/flowx-desktop/dist/
+
+# Rust build
+crates/flowx-desktop/src-tauri/target/
+
+# Release artifacts (uploaded to GitHub Releases, not tracked in git)
+/releases/
+
+# macOS
+.DS_Store
+
+# Time crate patches (workspace dependencies, not source)
+/time/
+/time-crate/

@@ -194,7 +194,7 @@ function App() {
 
     try {
       // 读取旧文件内容
-      const oldScript = await invoke<Script>('load_script', { name: renameTarget.name });
+      const oldScript = (await invoke('load_script', { name: renameTarget.name })) as Script;
       // 创建新文件
       await invoke('create_script', { name: newName });
       // 写入内容
@@ -206,7 +206,7 @@ function App() {
 
       if (currentScript?.name === renameTarget.name) {
         // 如果当前打开的是被重命名的脚本，更新引用
-        const newScript = await invoke<Script>('load_script', { name: newName });
+        const newScript = (await invoke('load_script', { name: newName })) as Script;
         setCurrentScript(newScript);
       }
 

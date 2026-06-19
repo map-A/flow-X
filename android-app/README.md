@@ -98,7 +98,7 @@ java -version
 ### 方式 2: 命令行
 
 ```bash
-cd /Users/mm/Documents/compile_accelarate/android-app
+cd android-app
 
 # 同步依赖
 ./gradlew --refresh-dependencies
